@@ -1,5 +1,5 @@
 import * as React from 'react'
-import basket from '../../../img/icons/basketButton.svg'
+import basket from '../../../imgs/icons/basketButton.svg'
 import './Price.scss'
 
 interface IProps {

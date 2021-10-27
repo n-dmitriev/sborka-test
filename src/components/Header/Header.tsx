@@ -1,10 +1,10 @@
 import * as React from 'react'
-import logo from '../../img/icons/logo.svg'
+import logo from '../../imgs/icons/logo.svg'
 import './Header.scss'
 import {useHistory} from 'react-router-dom'
 import {RouteNames} from '../../common/const'
 import {useTypedSelector} from '../../common/hooks'
-import basketLogo from '../../img/icons/basket.svg'
+import basketLogo from '../../imgs/icons/basket.svg'
 import {Dispatch, SetStateAction} from 'react'
 
 interface IProps {

@@ -1,9 +1,9 @@
-import item1 from '../img/products/item1.png'
-import item2 from '../img/products/item2.png'
-import item3 from '../img/products/item3.png'
-import item4 from '../img/products/item4.png'
-import item5 from '../img/products/item5.png'
-import item6 from '../img/products/item6.png'
+import item1 from '../imgs/products/item1.png'
+import item2 from '../imgs/products/item2.png'
+import item3 from '../imgs/products/item3.png'
+import item4 from '../imgs/products/item4.png'
+import item5 from '../imgs/products/item5.png'
+import item6 from '../imgs/products/item6.png'
 import {IProduct} from '../models/IProduct'
 
 export const data: IProduct[] = [

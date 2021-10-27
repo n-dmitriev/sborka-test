@@ -4,7 +4,7 @@ import {useTypedSelector} from '../../common/hooks'
 import {BasketItem} from '../BasketItem/BasketItem'
 import {tax, shipping, RouteNames} from '../../common/const'
 import {Dispatch, SetStateAction} from 'react'
-import crossB from '../../img/icons/crossB.svg'
+import crossB from '../../imgs/icons/crossB.svg'
 import {useHistory} from 'react-router-dom'
 
 interface IProps {

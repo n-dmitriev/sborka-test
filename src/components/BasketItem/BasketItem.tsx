@@ -1,9 +1,9 @@
 import * as React from 'react'
 import {IOrder} from '../../models/IOrder'
 import './BasketItem.scss'
-import minus from '../../img/icons/minus.svg'
-import plus from '../../img/icons/plus.svg'
-import cross from '../../img/icons/cross.svg'
+import minus from '../../imgs/icons/minus.svg'
+import plus from '../../imgs/icons/plus.svg'
+import cross from '../../imgs/icons/cross.svg'
 import {useDispatch} from 'react-redux'
 import {
     addProductToBasket,

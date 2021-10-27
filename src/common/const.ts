@@ -1,5 +1,5 @@
 export const RouteNames = {
-    PRODUCTS: () => '/',
+    PRODUCTS: () => '/products/',
     PRODUCT: (id = ':number') => `/product/${id}`
 }
 
