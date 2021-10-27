@@ -50,8 +50,8 @@ export const Basket: React.FC<IProps> = ({basketIsShow, showBasket}: IProps) => 
                 </div>
                 <div className={'basket__cost-prices'}>
                     <div>${subTotal.toLocaleString()}</div>
-                    <div>${subTotal ? tax.toLocaleString() : 0}</div>
-                    <div>${subTotal ? shipping.toLocaleString() : 0}</div>
+                    <div>${tax.toLocaleString()}</div>
+                    <div>${shipping.toLocaleString()}</div>
                     <div className={'title-2'}>${subTotal ? total.toLocaleString() : 0}</div>
                 </div>
             </div>
