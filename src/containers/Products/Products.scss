@@ -1,0 +1,11 @@
+.products {
+  margin: 60px auto 0 auto;
+  max-width: 890px;
+  padding: 10px;
+}
+
+@media (max-width: 1200px) {
+  .products {
+    max-width: 570px;
+  }
+}

@@ -1,0 +1,62 @@
+@import "../../css/mixins";
+@import "../../css/const";
+
+.basket-item {
+  height: 100px;
+  width: 330px;
+  display: flex;
+  position: relative;
+  border-radius: 5px;
+  margin-bottom: 40px;
+  cursor: pointer;
+  @include animate(0.25s);
+
+  &__img {
+    padding: 25px 5px 24px 5px;
+
+    & img {
+      width: 90px;
+      height: 51px;
+    }
+  }
+
+  &__description {
+    margin-left: 12px;
+    padding-right: 20px;
+
+    &-name {
+      height: 32px;
+      margin-bottom: 15px;
+    }
+
+    &-price {
+      display: flex;
+      align-items: center;
+    }
+
+    &-numbers {
+      margin-right: 8px;
+
+      & span, & img {
+        margin-right: 17px;
+      }
+
+      & img {
+        cursor: default;
+
+        &:hover {
+          @include animate-hover(1.05)
+        }
+      }
+    }
+  }
+
+  &:hover {
+    @include shadow()
+  }
+
+  & .close-spinner {
+    top: 0;
+    right: 5px;
+  }
+}

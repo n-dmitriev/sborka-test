@@ -1,0 +1,34 @@
+@import "../../css/const";
+@import "../../css/mixins";
+
+.card {
+  height: 300px;
+  width: 250px;
+  border: 1px solid $border-color;
+  border-radius: 3px;
+  margin: 0 auto 50px auto;
+  cursor: pointer;
+  @include animate(0.25s);
+
+  &__img {
+    padding: 29px 10px 29px 11px;
+
+    & img {
+      height: 130px;
+      width: 228px;
+    }
+  }
+
+  &__name {
+    margin-bottom: 13px;
+    font-weight: bold;
+  }
+
+  &__description {
+    padding: 12px 70px 15px 15px;
+  }
+
+  &:hover {
+    @include shadow();
+  }
+}

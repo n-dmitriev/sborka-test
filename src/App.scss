@@ -1,0 +1,74 @@
+@import "css/normalize.css";
+@import "css/fonts/roboto/roboto";
+@import "css/const";
+
+.app {
+  min-height: 100vh;
+  font-size: 14px;
+  font-family: 'Roboto', serif;
+  line-height: 16.41px;
+  overflow: hidden;
+
+  &__container {
+    display: flex;
+  }
+
+  &__content {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    display: flex;
+    height: calc(100vh - 81px);
+  }
+
+  .title-1 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .title-2 {
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  .close-spinner {
+    position: absolute;
+    font-size: 27px;
+    color: transparentize($border-color, 0.6);
+    transition: color 200ms,
+    transform 800ms;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      color: $border-color;
+      transform: rotate(360deg);
+    }
+  }
+
+  .button {
+    padding: 8px 30px;
+    background-color: #3366FF;
+    margin-bottom: 20px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 50px;
+  background-color: $border-color;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #888888;
+}
+
+::-webkit-scrollbar-corner {
+  background: rgba(0, 0, 0, 0);
+}

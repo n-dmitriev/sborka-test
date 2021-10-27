@@ -1,3 +1,7 @@
+# Test task for the SborkaProject company
+
+Task text: https://docs.google.com/document/d/1JTgRI68Kzlvxs_rpb7WgFav5LMZWPMEjwLxnnzYmgz0/edit
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
