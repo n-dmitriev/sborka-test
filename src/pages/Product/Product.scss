@@ -1,5 +1,6 @@
 .product {
   margin: 30px auto 0 auto;
+  position: relative;
 
   &__content {
     margin-bottom: 20px;
@@ -24,5 +25,13 @@
       margin-bottom: 10px;
     }
 
+  }
+}
+
+@media (min-width: 992px) {
+  .product__img {
+    & img {
+      width: calc(100vw - 500px)
+    }
   }
 }

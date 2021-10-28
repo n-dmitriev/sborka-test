@@ -83,3 +83,14 @@
     }
   }
 }
+
+@media (max-height: 550px) {
+  .basket {
+    margin-right: 20px;
+    overflow-y: scroll;
+  }
+
+  .basket_mobile .basket__products-list {
+    max-height: fit-content;
+  }
+}

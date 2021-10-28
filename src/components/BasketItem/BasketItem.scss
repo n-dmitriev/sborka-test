@@ -35,11 +35,10 @@
     }
 
     &-numbers {
-      margin-right: 8px;
-
-      & span, & img {
-        margin-right: 17px;
-      }
+      width: 84px;
+      display: flex;
+      justify-content: space-between;
+      margin-right: 24px;
 
       & img {
         cursor: default;
