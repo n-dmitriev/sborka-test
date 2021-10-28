@@ -1,11 +1,11 @@
 @import "css/normalize.css";
-@import "css/fonts/roboto/stylesheet.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @import "css/const";
 
 .app {
   min-height: 100vh;
   font-size: 14px;
-  font-family: 'Roboto', serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 16.41px;
   overflow: hidden;
 
