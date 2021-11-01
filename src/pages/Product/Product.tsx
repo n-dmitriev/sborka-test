@@ -14,7 +14,7 @@ interface IProps {
 
 }
 
-export const Product: React.FC<IProps> = ({}: IProps) => {
+export const Product: React.FC<IProps> = (props) => {
     const dispatch = useDispatch()
     const history = useHistory()
     const location = useLocation()
@@ -68,5 +68,3 @@ export const Product: React.FC<IProps> = ({}: IProps) => {
         </div>
     )
 }
-
-Product.defaultProps = {}

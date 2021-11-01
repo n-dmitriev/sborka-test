@@ -7,7 +7,7 @@ interface IProps {
     onClick(e: React.MouseEvent<HTMLElement>): void,
 }
 
-export const Price: React.FC<IProps> = ({onClick, price}: IProps) =>
+export const Price: React.FC<IProps> = ({onClick, price}) =>
     <div className={'price'}>
         <div className={'price__basket'} onClick={onClick}>
             <img src={basket} alt="basket"/>
@@ -17,7 +17,3 @@ export const Price: React.FC<IProps> = ({onClick, price}: IProps) =>
         </div>
     </div>
 
-Price.defaultProps = {
-    onClick() {},
-    price: 0
-}

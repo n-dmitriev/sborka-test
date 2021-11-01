@@ -12,7 +12,7 @@ interface IProps {
     showBasket: Dispatch<SetStateAction<boolean>>
 }
 
-export const Basket: React.FC<IProps> = ({basketIsShow, showBasket}: IProps) => {
+export const Basket: React.FC<IProps> = ({basketIsShow, showBasket}) => {
     const {basket} = useTypedSelector(state => state.spStore)
     const router = useHistory()
 
@@ -67,18 +67,13 @@ export const Basket: React.FC<IProps> = ({basketIsShow, showBasket}: IProps) => 
             {basketIsShow &&
             <div className={'d-block d-lg-none basket basket_mobile'}>
                 <div className={'basket__content'}>
-                    <span onClick={() => showBasket(false)} className="close-spinner basket__close">
+                    <div onClick={() => showBasket(false)} className="close-spinner basket__close">
                         <img src={crossB} alt="&#10005;"/>
-                    </span>
+                    </div>
                     {content}
                 </div>
             </div>
             }
         </>
     )
-}
-
-Basket.defaultProps = {
-    basketIsShow: false,
-    showBasket: () => null
 }

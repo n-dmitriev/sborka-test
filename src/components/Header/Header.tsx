@@ -5,24 +5,20 @@ import {useHistory} from 'react-router-dom'
 import {RouteNames} from '../../common/const'
 import {useTypedSelector} from '../../common/hooks'
 import basketLogo from '../../imgs/icons/basket.svg'
-import {Dispatch, SetStateAction} from 'react'
+import {Dispatch, SetStateAction, useMemo} from 'react'
 
 interface IProps {
     basketIsShow: boolean,
     showBasket: Dispatch<SetStateAction<boolean>>
 }
 
-export const Header: React.FC<IProps> = ({showBasket, basketIsShow}: IProps) => {
+export const Header: React.FC<IProps> = ({showBasket, basketIsShow}) => {
     const router = useHistory()
     const {basket} = useTypedSelector(state => state.spStore)
 
-    const getQuantity = () => {
-        let quantity = 0
-        basket.forEach(order => quantity += order.numOfProducts)
-        return quantity
-    }
-
-    const quantity = getQuantity()
+    const quantity = useMemo(() => {
+        return basket.reduce((acc, order) => (acc + order.numOfProducts), 0)
+    }, [basket])
 
     return (
         <nav className={'header'}>
@@ -37,9 +33,4 @@ export const Header: React.FC<IProps> = ({showBasket, basketIsShow}: IProps) => 
             </div>
         </nav>
     )
-}
-
-Header.defaultProps = {
-    basketIsShow: false,
-    showBasket: () => null
 }

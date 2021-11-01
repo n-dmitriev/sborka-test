@@ -11,7 +11,7 @@ interface IProps {
     data: IProduct
 }
 
-export const Card: React.FC<IProps> = ({data, data: {img, id, name, price}}: IProps) => {
+export const Card: React.FC<IProps> = ({data, data: {img, id, name, price}}) => {
     const dispatch = useDispatch()
     const router = useHistory()
 

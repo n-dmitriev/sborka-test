@@ -18,7 +18,7 @@ interface IProps {
     onClick: (id: string) => void
 }
 
-export const BasketItem: React.FC<IProps> = ({onClick, order: {numOfProducts, product, product: {id, img, name, price}}}: IProps) => {
+export const BasketItem: React.FC<IProps> = ({onClick, order: {numOfProducts, product, product: {id, img, name, price}}}) => {
     const dispatch = useDispatch()
 
     const onHandleClick = (action: ActionCreatorWithPayload<IProduct>) => (e: React.MouseEvent<HTMLElement>) => {
@@ -27,7 +27,7 @@ export const BasketItem: React.FC<IProps> = ({onClick, order: {numOfProducts, pr
     }
 
     return (
-        <div onClick={() => onClick(id)} key={id} className={'basket-item'}>
+        <div onClick={() => onClick(id)} className={'basket-item'}>
             <div className={'basket-item__img'}>
                 <img src={img} alt={name}/>
             </div>

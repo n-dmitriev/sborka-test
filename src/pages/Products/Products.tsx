@@ -8,7 +8,7 @@ import Loader from '../../components/UI/Loader/Loader'
 interface IProps {
 }
 
-export const Products: React.FC<IProps> = ({}: IProps) => {
+export const Products: React.FC<IProps> = (props) => {
     const {products} = useTypedSelector(state => state.spStore)
     const [isLoading, setLoading] = useState(true)
 
@@ -36,5 +36,3 @@ export const Products: React.FC<IProps> = ({}: IProps) => {
         </div>
     )
 }
-
-Products.defaultProps = {}
